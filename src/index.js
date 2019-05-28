@@ -1,7 +1,10 @@
-import { config } from './modules/config'
+import AppService from './modules/app.service'
+import {config} from './modules/config'
 import './modules/header.component'
-import css from './css/index.css'
+import './css/index.css'
 import './css/header.css'
 
-console.log(css);
-console.log("Key: " + config.key);
+console.log('Config key:', config.key);
+
+const service = new AppService('Hello world!');
+service.log();
