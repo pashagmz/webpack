@@ -3,6 +3,7 @@ import {config} from './modules/config'
 import './modules/header.component'
 import './css/index.css'
 import './css/header.css'
+import './less/index.less'
 
 console.log('Config key:', config.key);
 
